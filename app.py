@@ -48,6 +48,10 @@ def image_result():
     )
     return(render_template("image_result.html",r=r[0]))
 
+@app.route("/makeup_suggest",methods=["GET","POST"])
+def makeup_suggest():
+    return(render_template("makeup_suggest.html"))
+
 @app.route("/end",methods=["GET","POST"])
 def end():
     global flag
